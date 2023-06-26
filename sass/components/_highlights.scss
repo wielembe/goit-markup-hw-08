@@ -1,0 +1,29 @@
+.highlights {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        flex-basis: calc((1200px - 90px) / 4);
+    }
+
+    &__icon {
+        background-color: #f5f4fa;
+        height: 120px;
+        border-radius: 4px;
+        padding-top: 25px;
+    }
+
+    &__desc {
+        color: #757575;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        margin: 0;
+    }
+}

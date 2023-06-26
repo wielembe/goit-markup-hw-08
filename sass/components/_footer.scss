@@ -1,0 +1,82 @@
+footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 70px;
+
+    &__address-bottom {
+        max-width: 231px;
+        line-height: 24px;
+    }
+
+    &__address {
+        padding-top: 9px;
+        font-style: normal;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    &__contact {
+        display: flex;
+
+        color: #757575;
+
+        font-weight: 500;
+        font-size: 14px;
+
+        letter-spacing: 0.02em;
+
+        line-height: 24px;
+    }
+}
+
+ul li .find-us {
+    fill: #fff;
+}
+
+.newsletter {
+    max-width: 570px;
+    padding-right: 0;
+    margin: 0 auto;
+
+    &__subscription {
+        display: flex;
+        justify-content: flex-start;
+
+        gap: 10px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__mail-box {
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        background-color: #2f303a;
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__button-send {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background-color: #2196f3;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+    }
+
+    &__mail-send-svg {
+        fill: #fff;
+    }
+}
+
+.email {
+    color: #fff;
+}

@@ -1,0 +1,24 @@
+.customers {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+
+    &__icon {
+        fill: #afb1b8;
+        width: 169px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            fill: $linkColor;
+            border-color: $linkColor;
+            transition-duration: $transition;
+            transition-timing-function: $transitionDuration;
+        }
+    }
+}

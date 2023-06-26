@@ -1,0 +1,42 @@
+.team-section {
+    background-color: #f5f4fa;
+}
+
+.people {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0px;
+
+    &__person-space {
+        background-color: #fff;
+        width: 270px;
+        height: 428px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__person-pic {
+        width: 270px;
+        height: 260px;
+    }
+    &__name {
+        display: flex;
+        letter-spacing: 0.03em;
+        justify-content: center;
+        font-weight: 500;
+        line-height: 1.17;
+        padding-top: 30px;
+    }
+
+    &__function {
+        display: flex;
+        letter-spacing: 0.03em;
+        justify-content: center;
+        color: #757575;
+        line-height: 1.17;
+        padding-top: 10px;
+        padding-bottom: 16px;
+    }
+}
