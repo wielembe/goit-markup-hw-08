@@ -10,19 +10,29 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
+    border: none;
     outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: transparent;
+    fill: #3f51b5;
+}
+
+.toggle-svg {
+    fill: #212121;
+
+    &:hover {
+        fill: #2196f3;
+        transform: $transition;
+    }
 }
 
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -32,7 +42,7 @@
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #fff;
     z-index: 999;
 
     transform: translateX(100%);
@@ -61,4 +71,75 @@
     padding: 10px;
     color: #fff;
     text-decoration: none;
+}
+
+.mobile-nav {
+    &__link {
+        color: #212121;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        display: block;
+        margin-bottom: 32px;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            color: getColor("accent");
+        }
+        &--accent {
+            position: relative;
+            color: getColor("accent");
+        }
+    }
+}
+
+.contact-mobile {
+    margin-top: auto;
+    &__telephone {
+        color: #2196f3;
+        font-weight: 500;
+        font-size: 34px;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        display: block;
+        margin-bottom: 32px;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            color: getColor("accent");
+        }
+    }
+    &__email {
+        @extend .contact-mobil__telephone !optional;
+        font-size: 24px;
+        margin-bottom: 64px;
+        color: #757575;
+    }
+}
+
+.socialmedia-mobile {
+    display: flex;
+    align-items: bottom;
+
+    &__item {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        &--notborder {
+            border: 0;
+        }
+    }
+    &__link {
+        color: #2196f3;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            color: getColor("accent");
+        }
+    }
 }

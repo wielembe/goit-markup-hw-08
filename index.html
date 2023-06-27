@@ -38,7 +38,7 @@
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                   >
-                    <svg
+                    <svg class="toggle-svg"
                       width="24"
                       height="24"
                       fill="currentColor"
@@ -69,6 +69,7 @@
                             <li><a class="header__item" href="">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div class="header__mailing">
 
                     <div class="header__contact-list">
                         <a href="mailto:info@devstutio.com" class="header__contact">
@@ -88,6 +89,7 @@
                             </svg>
                             +1 212-772-24150</a
                         >
+                    </div>
                     </div>
                 </div>
             </div>
@@ -608,7 +610,7 @@
 
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-              <svg
+              <svg class="toggle-svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -623,12 +625,55 @@
               </svg>
             </button>
       
-            <ul class="mobile-menu">
-              <li><a href="" class="link">About</a></li>
-              <li><a href="" class="link">Products</a></li>
-              <li><a href="" class="link">Contacts</a></li>
-              <li><a href="" class="link">Career</a></li>
-            </ul>
+            <menu class="mobile-nav">
+                <li>
+                  <a
+                    class="mobile-nav__link mobile-nav__link--accent"
+                    href="index.html"
+                    lang="pl"
+                    >Studio</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="portfolio.html" lang="pl"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="kontakt.html" lang="pl">Contact</a>
+                </li>
+              </menu>
+              <ul class="contact-mobile">
+                <li>
+                  <a class="contact-mobile__telephone" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li>
+                  <a class="contact-mobile__email" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <ul class="socialmedia-mobile">
+                    <li class="socialmedia-mobile__item">
+                      <a class="socialmedia-mobile__link" href="">Instagram</a>
+                    </li>
+                    <li class="socialmedia-mobile__item">
+                      <a class="socialmedia-mobile__link" href="">Twitter</a>
+                    </li>
+                    <li class="socialmedia-mobile__item">
+                      <a class="socialmedia-mobile__link" href="">Facebook</a>
+                    </li>
+                    <li
+                      class="socialmedia-mobile__item socialmedia-mobile__item--notborder"
+                    >
+                      <a class="socialmedia-mobile__link" href="">LinkedIn</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
       
           <script

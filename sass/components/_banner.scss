@@ -1,5 +1,4 @@
 .banner {
-    display: none;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -33,5 +32,24 @@
         &:focus {
             cursor: pointer;
         }
+    }
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .title-section {
+        background-image: url("../images/officepicture@2x.jpg");
+    }
+}
+@media #{$tablet} {
+    .title-section {
+        max-width: 768px;
+    }
+}
+@media #{$desktop} {
+    .title-section {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
     }
 }
