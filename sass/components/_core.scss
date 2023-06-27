@@ -1,18 +1,18 @@
-.main-images {
+.main-images-sec {
     display: none;
+}
 
+.main-images {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding: 0;
 
     &__image {
-        display: none;
         position: relative;
     }
 
     &__back {
-        display: none;
         width: 100%;
         height: 70px;
         background-color: rgba(47, 48, 58, 0.8);
@@ -21,7 +21,6 @@
     }
 
     &__desc {
-        display: none;
         font-size: 14px;
         font-weight: 700;
         color: #fff;
@@ -30,9 +29,5 @@
         display: flex;
         justify-content: center;
         margin-top: 27px;
-    }
-
-    &__container {
-        display: none;
     }
 }

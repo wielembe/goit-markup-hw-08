@@ -1,12 +1,14 @@
 .highlights {
     display: none;
     display: flex;
+
     flex-wrap: nowrap;
     list-style: none;
     padding: 0;
     gap: 30px;
 
     &__item {
+        display: none;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
@@ -14,7 +16,6 @@
     }
 
     &__icon {
-        display: none;
         background-color: #f5f4fa;
         height: 120px;
         border-radius: 4px;
@@ -27,6 +28,5 @@
         font-size: 14px;
         line-height: 1.71;
         margin: 0;
-        display: none;
     }
 }

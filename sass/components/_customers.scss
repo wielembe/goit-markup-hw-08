@@ -1,5 +1,8 @@
-.customers {
+.customers-main {
     display: none;
+}
+
+.customers {
     display: flex;
     flex-wrap: nowrap;
 
@@ -8,7 +11,6 @@
     margin: 0 auto;
 
     &__icon {
-        display: none;
         fill: #afb1b8;
         width: 169px;
         height: 92px;
