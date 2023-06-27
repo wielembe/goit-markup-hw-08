@@ -2,6 +2,15 @@
     border-bottom: solid;
 
     border-color: #ececec;
+    padding: 10px 0;
+
+    @include tablet {
+        padding: 21px 0;
+    }
+
+    @include desktop {
+        padding: 24px 0 25px;
+    }
     margin: 0 auto;
 
     &__wrapper {
@@ -13,11 +22,38 @@
 
         color: #fff;
     }
+
+    &__nav {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            margin-left: 83px;
+            margin-right: auto;
+        }
+        @include desktop {
+            margin-left: 93px;
+        }
+    }
     &__menu {
-        display: flex;
-        width: 285px;
-        justify-content: space-between;
-        margin-right: 314px;
+        display: none;
+
+        @include tablet {
+            display: flex;
+            margin-left: 83px;
+        }
+        @include desktop {
+            margin-left: 93px;
+        }
+    }
+
+    &__hamburger {
+        background: transparent;
+        border: none;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__contact-svg {
@@ -26,6 +62,16 @@
         align-content: baseline;
         padding-right: 10px;
         gap: 0;
+    }
+
+    &__phonemail {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 
     &__item {

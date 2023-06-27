@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/main.min.css" />
         <link rel="stylesheet" href="./css/modern-normalize.min.css" />
         <title>corporate page</title>
@@ -17,13 +19,13 @@
                 <div class="header__wrapper">
                     <a class="logo" href="">WebStudio</a>
 
-                    <button type="button" class="header__menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <button type="button" class="header__hamburger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                         <svg class="header__menu-toggle-icon" width="24" height="16">
                            <use href="./images/icons.svg#icon-menu_24px"></use>
                            </svg>
                    </button>
                     
-                    <nav>
+                    <nav class="header__nav">
                         <ul class="header__menu">
                             <li>
                                 <a class="header__item header__item--active" href="./index.html"
@@ -39,6 +41,7 @@
                             <li><a class="header__item" href="">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div class="header__phonemail">
 
                     <div class="header__contact-list">
                         <a href="mailto:info@devstutio.com" class="header__contact">
@@ -58,6 +61,7 @@
                             </svg>
                             +1 212-772-24150</a
                         >
+                    </div>
                     </div>
 
                     
@@ -145,7 +149,8 @@
                     </ul>
                 </div>
 
-                <div class="container">
+                <div class="main-images__container">
+                    <div class="container">
                     <h2>What we do</h2>
                     <!--potential links to be added to the pictures next. I removed width and height parameters below as they are defined in css-->
                     <ul class="main-images">
@@ -179,6 +184,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
             </div>
 
             <div class="team-section">
@@ -579,6 +585,75 @@
             </div>
         </footer>
 
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-container__close-btn js-close-menu">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
+            <menu class="menu-container__mobile-menu">
+              <li>
+                <a href="index.html"  class="menu-container__mobile-link"
+                
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="menu-container__mobile-link" href="portfolio.html" 
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="menu-container__mobile-link" href="contact.html">Contact</a>
+              </li>
+            </menu>
+            <ul class="menu-container__contact-mobile">
+              <li>
+                <a class="contact-mobil__telephon" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+              <li>
+                <a class="menu-container__contact-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <ul class="socialmedia-mobil">
+                  <li class="socialmedia-mobil__item">
+                    <a class="socialmedia-mobil__link" href="">Instagram</a>
+                  </li>
+                  <li class="socialmedia-mobil__item">
+                    <a class="socialmedia-mobil__link" href="">Twitter</a>
+                  </li>
+                  <li class="socialmedia-mobil__item">
+                    <a class="socialmedia-mobil__link" href="">Facebook</a>
+                  </li>
+                  <li
+                    class="socialmedia-mobil__item socialmedia-mobil__item--notborder"
+                  >
+                    <a class="socialmedia-mobil__link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+        
+        
+
         <div class="is-hidden backdrop" data-modal>
             <div class="modal">
                 <button class="modal__modal-close" data-modal-close>X</button>
@@ -681,7 +756,15 @@
                 </form>
             </div>
         </div>
+        
 
-        <script src="./js/modal.js"></script>
+        
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
+
+      <script src="./js/modal.js"></script>
     </body>
 </html>
