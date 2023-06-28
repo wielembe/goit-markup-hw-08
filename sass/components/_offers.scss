@@ -1,8 +1,11 @@
 .offers {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
     padding: 0;
+    //max-width: 450px;
+    align-items: center;
 
     &__techno-back {
         display: flex;
@@ -89,5 +92,18 @@
         margin: 0;
 
         padding-left: 24px;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__single-offer-flow {
+            max-width: 354px;
+        }
+    }
+
+    @include desktop {
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
