@@ -41,12 +41,12 @@
         background-image: url("../images/officepicture@2x.jpg");
     }
 }
-@media #{$tablet} {
+@include tablet {
     .title-section {
         max-width: 768px;
     }
 }
-@media #{$desktop} {
+@include desktop {
     .title-section {
         padding-top: 200px;
         padding-bottom: 200px;

@@ -27,26 +27,36 @@
         fill: #2196f3;
         transform: $transition;
     }
-}
 
-@media (min-width: 768px) {
-    .menu-toggle {
+    @include tablet {
         display: none;
     }
 }
 
+//@media (min-width: 768px) {
+//  .menu-toggle {
+//    display: none;
+//}
+//}
+
 .menu-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    inset: 0;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     z-index: 999;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    // &__close-btn {
+    //   position: absolute;
+    // top: 8px;
+    //right: 8px;
+    //}
 }
 
 .menu-container.is-open {
@@ -120,7 +130,8 @@
 
 .socialmedia-mobile {
     display: flex;
-    align-items: bottom;
+    padding-top: 64px;
+    padding-bottom: 48px;
 
     &__item {
         padding-left: 10px;
