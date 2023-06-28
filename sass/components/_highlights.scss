@@ -1,13 +1,21 @@
 .highlights {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    //flex-direction: column;
 
     //flex-wrap: nowrap;
-    list-style: none;
+    //list-style: none;
     padding: 0;
-    max-width: 450px;
+    //max-width: 450px;
+    margin-right: 0;
 
     gap: 30px;
+
+    //@include tablet {
+    //display: flex;
+    //flex-direction: column;
+    //flex-wrap: wrap;
+    //}
 
     &__highlights-header {
         display: flex;
@@ -42,11 +50,7 @@
 
     @include tablet {
         display: flex;
-        direction: column;
-
-        //flex-wrap: wrap;
-
-        padding-left: 0;
+        //flex-direction: row;
 
         &__item {
             max-width: 354px;
