@@ -1,18 +1,20 @@
-.customers-main {
-    display: none;
-}
+//.customers-main {
+//  display: none;
+//}
 
 .customers {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     gap: 30px;
     padding: 0;
+
+    justify-content: space-between;
     margin: 0 auto;
 
     &__icon {
         fill: #afb1b8;
-        width: 169px;
+        max-width: 210px;
         height: 92px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
@@ -23,6 +25,12 @@
             border-color: $linkColor;
             transition-duration: $transition;
             transition-timing-function: $transitionDuration;
+        }
+    }
+
+    @include desktop {
+        &__icon {
+            max-width: 170px;
         }
     }
 }

@@ -41,12 +41,6 @@ nav {
         padding: 0;
         margin: 0;
         list-style: none;
-
-        //@media (max-width: 767px) {
-        //  .menu {
-        //    display: none;
-        // }
-        // }
     }
 
     &__menu .link {
@@ -111,7 +105,10 @@ nav {
 
         @include desktop {
             display: flex;
-            max-width: 161px;
+
+            flex-wrap: nowrap;
+
+            //max-width: 161px;
             justify-content: space-between;
             align-items: center;
 

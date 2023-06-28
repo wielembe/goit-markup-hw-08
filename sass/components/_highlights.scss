@@ -1,18 +1,26 @@
 .highlights {
-    display: none;
     display: flex;
+    flex-direction: column;
 
-    flex-wrap: nowrap;
+    //flex-wrap: nowrap;
     list-style: none;
     padding: 0;
+    max-width: 450px;
+
     gap: 30px;
 
+    &__highlights-header {
+        display: flex;
+        align-items: center;
+    }
+
     &__item {
-        display: none;
+        display: block;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
-        flex-basis: calc((1200px - 90px) / 4);
+
+        //flex-basis: calc((1200px - 90px) / 4);
     }
 
     &__icon {
@@ -20,6 +28,8 @@
         height: 120px;
         border-radius: 4px;
         padding-top: 25px;
+        margin: auto;
+        width: 450px;
     }
 
     &__desc {
@@ -28,5 +38,48 @@
         font-size: 14px;
         line-height: 1.71;
         margin: 0;
+    }
+
+    @include tablet {
+        display: flex;
+        direction: column;
+
+        //flex-wrap: wrap;
+
+        padding-left: 0;
+
+        &__item {
+            max-width: 354px;
+        }
+
+        &__icon {
+            max-width: 354px;
+            //flex-basis: calc((738px - 30px) / 2);
+            gap: 30px;
+        }
+
+        //&__desc {
+        //  max-width: 354px;
+        //}
+    }
+    @include desktop {
+        padding: 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        &__item {
+            max-width: 270px;
+        }
+        //flex-basis: calc((1200px - 90px) / 4);
+
+        &__icon {
+            max-width: 270px;
+            // flex-basis: calc((1200px - 90px) / 4);
+            gap: 30px;
+        }
+
+        &__desc {
+            max-width: 270px;
+        }
     }
 }
