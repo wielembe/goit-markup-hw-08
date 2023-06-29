@@ -93,10 +93,12 @@
 
         &__item {
             max-width: 270px;
+            padding-top: 0;
         }
 
         &__icon {
             max-width: 270px;
+
             // flex-basis: calc((1200px - 90px) / 4);
             gap: 30px;
         }
