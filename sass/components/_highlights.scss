@@ -24,7 +24,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
-        max-width: 450px;
+        //max-width: 450px;
         //margin: auto;
 
         //flex-basis: calc((1200px - 90px) / 4);
@@ -66,11 +66,12 @@
         //align-content: flex-start;
         flex-wrap: wrap;
 
-        padding: 0;
         //margin: auto;
+        justify-content: space-between;
+        padding: 0;
 
         //flex-basis: calc((100% - 30px) / 2);
-        //gap: 30px;
+        gap: 30px;
 
         &__item {
             max-width: 354px;
@@ -78,7 +79,7 @@
 
         &__icon {
             max-width: 354px;
-            //flex-basis: calc((738px - 30px) / 2);
+            flex-basis: calc((738px - 30px) / 2);
         }
 
         &__desc {
