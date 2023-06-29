@@ -25,9 +25,14 @@
         font-size: 14px;
         line-height: 1.17;
         max-width: 450px;
-        margin: auto;
+        //margin: auto;
 
         //flex-basis: calc((1200px - 90px) / 4);
+    }
+
+    &__back {
+        display: flex;
+        color: #f5f4fa;
     }
 
     &__icon {
@@ -35,6 +40,7 @@
         background-color: #f5f4fa;
         height: 120px;
         border-radius: 4px;
+
         padding-top: 25px;
         //margin: 0 auto;
         //max-width: 450px;
@@ -59,6 +65,7 @@
 
         //align-content: flex-start;
         flex-wrap: wrap;
+
         padding: 0;
         //margin: auto;
 
@@ -83,6 +90,7 @@
 
         flex-direction: row;
         justify-content: space-between;
+
         padding: 0;
 
         flex-wrap: nowrap;
@@ -93,7 +101,7 @@
 
         &__item {
             max-width: 270px;
-            padding-top: 0;
+            //padding-top: 0;
         }
 
         &__icon {
