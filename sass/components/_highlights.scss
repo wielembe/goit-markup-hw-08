@@ -1,15 +1,16 @@
 .highlights {
     display: flex;
 
-    //justify-content: center;
     //flex-wrap: wrap;
-    //align-items: center;
+
     flex-direction: column;
 
     //list-style: none;
-    //padding: 0;
+    //padding-left: 15px;
+    //padding-right: 15px;
+    //justify-content: center;
     //max-width: 450px;
-    //margin: 0 auto;
+    //margin: auto;
 
     gap: 30px;
 
@@ -20,12 +21,11 @@
 
     &__item {
         display: block;
-        // align-items: center;
+        //align-items: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
-        //max-width: 450px;
-        //margin: auto;
+        max-width: 450px;
 
         //flex-basis: calc((1200px - 90px) / 4);
     }
@@ -33,6 +33,7 @@
     &__back {
         display: flex;
         color: #f5f4fa;
+        max-width: 450px;
     }
 
     &__icon {
@@ -42,12 +43,11 @@
         border-radius: 4px;
 
         padding-top: 25px;
-        //margin: 0 auto;
-        //max-width: 450px;
+        //margin: 0;
     }
 
     &__desc {
-        //display: flex;
+        display: flex;
         //justify-content: center;
 
         color: #757575;
@@ -55,7 +55,8 @@
         font-size: 14px;
         line-height: 1.71;
         //margin: 0 auto;
-        max-width: 450px;
+        //padding: auto;
+        //max-width: 450px;
     }
 
     @include tablet {
