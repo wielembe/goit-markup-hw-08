@@ -89,7 +89,7 @@
 
         //flex-basis: calc((100% - 90px) / 4);
         //align-items: center;
-        //gap: 30px;
+        gap: 30px;
 
         &__item {
             max-width: 270px;
@@ -100,7 +100,7 @@
             max-width: 270px;
 
             // flex-basis: calc((1200px - 90px) / 4);
-            gap: 30px;
+            // gap: 30px;
         }
 
         &__desc {
