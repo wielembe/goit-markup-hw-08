@@ -3,6 +3,7 @@
 
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     //flex-direction: column;
 
     //flex-wrap: nowrap;
@@ -23,6 +24,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
+        max-width: 450px;
 
         //flex-basis: calc((1200px - 90px) / 4);
     }
@@ -33,7 +35,8 @@
         border-radius: 4px;
         padding-top: 25px;
         margin: auto;
-        width: 450px;
+        max-width: 450px;
+        margin: 0;
     }
 
     &__desc {
@@ -42,6 +45,7 @@
         font-size: 14px;
         line-height: 1.71;
         margin: 0;
+        max-width: 450px;
     }
 
     @include tablet {
@@ -56,6 +60,10 @@
             max-width: 354px;
             //flex-basis: calc((738px - 30px) / 2);
             gap: 30px;
+        }
+
+        &__desc {
+            max-width: 354px;
         }
 
         //&__desc {
